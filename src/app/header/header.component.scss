@@ -1,0 +1,58 @@
+@import "../../_variables.scss";
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark-mode-elements;
+    padding: 20px;
+    user-select: none;
+    color: $dark-mode-text;
+
+    @media only screen and (min-width: 1600px){ 
+        padding: 30px; 
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (min-width: 1024px){
+            width: 95%;
+        }
+    }
+
+    .leftSide{
+        p{
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+    }
+
+    .rightSide{
+        display: grid;
+        grid-template-columns: .37fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        cursor: pointer;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+
+            img{
+                width: 1.3rem;
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    }
+}
