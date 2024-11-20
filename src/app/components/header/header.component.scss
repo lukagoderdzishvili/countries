@@ -1,4 +1,4 @@
-@import "../../_variables.scss";
+@import "variables";
 
 .header{
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     background: $dark-mode-elements;
     padding: 20px;
-    user-select: none;
+    user-select: none; 
     color: $dark-mode-text;
 
     @media only screen and (min-width: 1600px){ 
